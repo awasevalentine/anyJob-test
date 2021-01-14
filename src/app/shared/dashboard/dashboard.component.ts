@@ -9,7 +9,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  plans: string[] = ['Plan 1', 'Plan 2', 'Plan 3'];
+  plans: string[] = ['Daily', 'Weekly', 'Monthlys'];
 
   loanDetails: any = {
     loanAmount: "",
@@ -24,16 +24,10 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  loanForm(){
-
-  }
-
   handlePlanSelected(evt: any) {
-    console.log('selected evtData', evt);
     this.loanDetails.plan = evt;
   }
   onAccommodationStatusChange(evt) {
-    console.log('accomodation status = ', evt.value);
     this.loanDetails.accomodationStatus = evt.value;
   }
 

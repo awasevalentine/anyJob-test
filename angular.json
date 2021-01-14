@@ -131,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "anyJob-Test"
+  "defaultProject": "anyJob-Test",
+  "cli": {
+    "analytics": false
+  }
 }

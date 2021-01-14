@@ -7,7 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class LoanRequestService {
 
-  private _apiBaseUrl: string = 'http://localhost:3000/api/loans/requests';
+  //private _apiBaseUrl: string = 'http://localhost:3000/api/loans/requests';
+
+  private _apiBaseUrl: string = 'https://ng-loan-app.herokuapp.com/api/loans/request';
 
   constructor(private _httpClient: HttpClient) {
 

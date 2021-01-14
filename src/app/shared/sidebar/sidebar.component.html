@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <mat-card class="mt-5">
-        <mat-card-header fxLayout="row" fxLayoutAlign="center start" class="mb-5">
+        <mat-card-header fxLayout="column" style="padding-bottom: 7em; padding-left: 6em;">
             <circle-progress
                 [percent]="33"
                 [maxPercent]="100"
@@ -11,7 +11,7 @@
                 [radius]="39"
                 [outerStrokeWidth]="3"
                 [innerStrokeWidth]="3"
-                [outerStrokeColor]="'#18e756'"
+                [outerStrokeColor]="'#18e759'"
                 [innerStrokeColor]="'#1b34ee'"
                 [animation]="true"
                 [titleColor]="'#FFF'"
@@ -21,14 +21,16 @@
                 [unitsFontSize]="20"
                 [animationDuration]="300"
             ></circle-progress>
+            <span class="ml-2">Our Progress</span>
         </mat-card-header>
-    <mat-divider></mat-divider>
+        <hr style="border: solid darkblue 1px;">
         <mat-card-content>
             <mat-nav-list>
                 <div class="content-wrapper" fxLayout="column" fxLayoutGap="20px">
 
-                    <button mat-button >
-                        <mat-icon class="mr-3">credit_card</mat-icon>Payment Option</button>
+                    <button mat-button>
+                        <mat-icon class="mr-3">credit_card</mat-icon>Payment Option </button>
+
                     <button mat-button >
                         <mat-icon class="mr-3">archive</mat-icon>Financial Details</button>
                     <button mat-button >

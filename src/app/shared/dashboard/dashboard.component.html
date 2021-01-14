@@ -45,7 +45,7 @@
       <label class="mt-3">Choose a monthly payment plan</label>
       <br>
       <select class="form-select form-control w-100" id="plan" name="plan"  [(ngModel)]="loanDetails.paymentPlan">
-        <option selected>Select plan</option>
+        <option value="" selected>Select plan</option>
         <option *ngFor="let plan of plans" [value]="plan">{{plan}}</option>>
       </select>
   <mat-progress-bar *ngIf="loaderIsActive" mode="indeterminate" color="primary"></mat-progress-bar>
