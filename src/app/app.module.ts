@@ -12,6 +12,7 @@ import { DashboardComponent } from './shared/dashboard/dashboard.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HttpClientModule } from '@angular/common/http';
+import { APP_BASE_HREF } from '@angular/common'
 
 @NgModule({
   declarations: [
@@ -50,7 +51,11 @@ import { HttpClientModule } from '@angular/common/http';
       "animationDuration": 1000,
       "showUnits": true})
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_BASE_HREF, useValue: '/'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
