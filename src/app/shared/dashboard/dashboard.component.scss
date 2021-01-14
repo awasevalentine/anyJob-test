@@ -1,0 +1,15 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+mat-progress-bar{
+    background-color: green !important;
+    color: green !important;
+}
+
+mat-card {
+    height:30px;
+
+}

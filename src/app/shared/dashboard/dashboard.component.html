@@ -1,0 +1,59 @@
+<div class="container mt-5">
+<div fxLayout="column" fxLayoutGap="1px" class="mt-3 main-content-wrapper">
+    <h4 matSubheader>Pay Rent Monthly Application</h4>
+    <h2 class="mat-display-2">Payment Option</h2>
+    <div fxLayout="row">
+        <h4 matSubheader>Tell us about your request</h4>
+        <span fxFlex fxLayoutAlign="end start">
+            <h5 matSubheader>step 1 of 3</h5>
+        </span>
+    </div>
+    
+    <div fxFlex="80" fxLayout="row">
+        <mat-progress-bar mode="determinate" value="30"></mat-progress-bar>
+    </div>
+ 
+    <span>What's your accommodation status?</span>
+    <br>
+
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+        
+            <mat-card fxFlex="25">
+                <mat-radio-button value="1">Looking to renew my rent</mat-radio-button>
+            </mat-card>
+            <mat-card fxFlex="25">
+                <mat-radio-button value="2">Want to pay for new place</mat-radio-button>
+            </mat-card>
+            <mat-card fxFlex="25">
+                <mat-radio-button value="3">I'm still searching</mat-radio-button>
+            </mat-card>
+    </div>
+</div>
+<form #paymentForm="ngForm" (ngSubmit)="loanForm()">
+    <label class="mt-3">How much is your rent request amount?</label>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="inputGroup-sizing-sm">₦</span>
+        <input type="text" class="form-control" placeholder="Enter amount" aria-label="Resent-request-Amount" aria-describedby="addon-wrapping">
+      </div>
+
+      <label class="mt-3">How much do you earn monthly?</label>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="inputGroup-sizing-sm">₦</span>
+        <input type="text" class="form-control" placeholder="Enter amount" aria-label="Monthly-Earning" aria-describedby="addon-wrapping">
+      </div>
+    <div>
+      <label class="mt-3">Choose a monthly payment plan</label>
+      <br>
+      <select class="form-select w-100">
+        <option selected>Select plan</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="flex-end" class="mt-5">
+        <button type="submit" class="btn btn-primary">Next </button>
+    </div>
+</form>
+</div>
