@@ -9,7 +9,7 @@ mat-card {
 
 }
 .mat-progress-bar-fill::after {
-    background-color: green !important; 
+    background-color: green !important;
 }
 
 .content-wrapper{
@@ -18,4 +18,16 @@ mat-card {
 
 .btn{
     width: 100px;
+}
+
+
+.mat-typography h4 {
+  font: 400 15px/24px Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+   margin: 0 0 0 !important;
+}
+h4{
+
+  letter-spacing: normal;
+   margin: 0 !important;
 }

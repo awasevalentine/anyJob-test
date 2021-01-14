@@ -11,6 +11,7 @@ import { AngularMaterialModule } from './angular-material/angular-material.modul
 import { DashboardComponent } from './shared/dashboard/dashboard.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,12 +27,12 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     BrowserAnimationsModule,
     AngularMaterialModule,
     ReactiveFormsModule,
+    HttpClientModule,
     FormsModule,
     NgCircleProgressModule.forRoot({
       "backgroundOpacity": 1,
       "backgroundStrokeWidth": 4,
       "backgroundPadding": 0,
-      "title":"",
       "radius": 39,
       "space": -2,
       "toFixed": 0,
@@ -40,14 +41,13 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
       "outerStrokeColor": "#18e756",
       "innerStrokeColor": "#1b34ee",
       "innerStrokeWidth": 3,
-     
+
       "subtitleColor": "#271124",
       "subtitleFontSize": "19",
       "imageHeight": 229,
       "imageWidth": 104,
       "animateTitle": false,
       "animationDuration": 1000,
-      "showTitle": false,
       "showUnits": true})
   ],
   providers: [],

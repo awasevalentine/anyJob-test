@@ -6,14 +6,19 @@
                 [maxPercent]="100"
                 [showUnits]="true"
                 [toFixed]="0"
-                [showTitle]="false"
-                [title]=""
+                [showTitle]="true"
+                [showSubtitle]="false"
                 [radius]="39"
                 [outerStrokeWidth]="3"
                 [innerStrokeWidth]="3"
                 [outerStrokeColor]="'#18e756'"
                 [innerStrokeColor]="'#1b34ee'"
                 [animation]="true"
+                [titleColor]="'#FFF'"
+                [subtitleColor]="'#FFF'"
+                [unitsColor]="'#FFF'"
+                [unitsFontWeight]="33"
+                [unitsFontSize]="20"
                 [animationDuration]="300"
             ></circle-progress>
         </mat-card-header>
@@ -21,14 +26,14 @@
         <mat-card-content>
             <mat-nav-list>
                 <div class="content-wrapper" fxLayout="column" fxLayoutGap="20px">
-                    
-                    <button mat-button > 
+
+                    <button mat-button >
                         <mat-icon class="mr-3">credit_card</mat-icon>Payment Option</button>
                     <button mat-button >
                         <mat-icon class="mr-3">archive</mat-icon>Financial Details</button>
                     <button mat-button >
                         <mat-icon class="mr-3">home</mat-icon>Rent Information</button>
-                
+
                 </div>
             </mat-nav-list>
         </mat-card-content>
