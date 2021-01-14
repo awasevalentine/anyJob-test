@@ -1,5 +1,23 @@
 <div class="container mt-5">
     <mat-card class="mt-5">
+        <mat-card-header fxLayout="row" fxLayoutAlign="center start" class="mb-5">
+            <circle-progress
+                [percent]="33"
+                [maxPercent]="100"
+                [showUnits]="true"
+                [toFixed]="0"
+                [showTitle]="false"
+                [title]=""
+                [radius]="39"
+                [outerStrokeWidth]="3"
+                [innerStrokeWidth]="3"
+                [outerStrokeColor]="'#18e756'"
+                [innerStrokeColor]="'#1b34ee'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress>
+        </mat-card-header>
+    <mat-divider></mat-divider>
         <mat-card-content>
             <mat-nav-list>
                 <div class="content-wrapper" fxLayout="column" fxLayoutGap="20px">
